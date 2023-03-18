@@ -1,5 +1,5 @@
 {
-    "name": "romanzipp/laravel-seo",
+    "name": "eim-solutions/laravel-seo",
     "description": "Laravel SEO package",
     "license": "MIT",
     "type": "library",
@@ -8,7 +8,11 @@
             "name": "romanzipp",
             "email": "ich@ich.wtf",
             "homepage": "https://ich.wtf"
-        }
+        },
+        {
+            "name": "vukasinjockovic",
+            "email": "jockovicvukasin@gmail.com"
+        },
     ],
     "require": {
         "php": "^7.1|^8.0",
@@ -26,7 +30,7 @@
     },
     "autoload": {
         "psr-4": {
-            "romanzipp\\Seo\\": "src"
+            "eim-solutions\\Seo\\": "src"
         },
         "files": [
             "src/helpers.php"
@@ -34,7 +38,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "romanzipp\\Seo\\Test\\": "tests"
+            "eim-solutions\\Seo\\Test\\": "tests"
         }
     },
     "scripts": {
@@ -43,10 +47,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "romanzipp\\Seo\\Providers\\SeoServiceProvider"
+                "eim-solutions\\Seo\\Providers\\SeoServiceProvider"
             ],
             "aliases": {
-                "Seo": "romanzipp\\Seo\\Facades\\Seo"
+                "Seo": "eim-solutions\\Seo\\Facades\\Seo"
             }
         }
     },
