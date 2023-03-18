@@ -1,6 +1,6 @@
 <?php
 
-namespace romanzipp\Seo\Structs;
+namespace laravel-seo\Seo\Structs;
 
 /**
  * @see https://github.com/joshbuchea/HEAD#meta

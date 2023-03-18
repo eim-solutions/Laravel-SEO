@@ -1,6 +1,6 @@
 <?php
 
-namespace romanzipp\Seo\Test;
+namespace laravel-seo\Seo\Test;
 
 use Spatie\SchemaOrg\BreadcrumbList;
 use Spatie\SchemaOrg\Schema;

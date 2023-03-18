@@ -1,19 +1,19 @@
 <?php
 
-namespace romanzipp\Seo\Services\Traits;
+namespace laravel-seo\Seo\Services\Traits;
 
 use Illuminate\Support\Arr;
-use romanzipp\Seo\Services\SeoService;
-use romanzipp\Seo\Structs\Link\Canonical;
-use romanzipp\Seo\Structs\Meta;
-use romanzipp\Seo\Structs\Meta\Charset;
-use romanzipp\Seo\Structs\Meta\CsrfToken;
-use romanzipp\Seo\Structs\Meta\Description;
-use romanzipp\Seo\Structs\Meta\OpenGraph;
-use romanzipp\Seo\Structs\Meta\Twitter;
-use romanzipp\Seo\Structs\Meta\Viewport;
-use romanzipp\Seo\Structs\Struct;
-use romanzipp\Seo\Structs\Title;
+use laravel-seo\Seo\Services\SeoService;
+use laravel-seo\Seo\Structs\Link\Canonical;
+use laravel-seo\Seo\Structs\Meta;
+use laravel-seo\Seo\Structs\Meta\Charset;
+use laravel-seo\Seo\Structs\Meta\CsrfToken;
+use laravel-seo\Seo\Structs\Meta\Description;
+use laravel-seo\Seo\Structs\Meta\OpenGraph;
+use laravel-seo\Seo\Structs\Meta\Twitter;
+use laravel-seo\Seo\Structs\Meta\Viewport;
+use laravel-seo\Seo\Structs\Struct;
+use laravel-seo\Seo\Structs\Title;
 
 trait ShorthandSetterTrait
 {

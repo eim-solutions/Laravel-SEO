@@ -1,9 +1,9 @@
 <?php
 
-namespace romanzipp\Seo\Structs\Meta;
+namespace laravel-seo\Seo\Structs\Meta;
 
-use romanzipp\Seo\Structs\Meta;
-use romanzipp\Seo\Structs\Struct;
+use laravel-seo\Seo\Structs\Meta;
+use laravel-seo\Seo\Structs\Struct;
 
 /**
  * @see https://github.com/joshbuchea/HEAD#recommended-minimum

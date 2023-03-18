@@ -1,11 +1,11 @@
 <?php
 
-namespace romanzipp\Seo\Test;
+namespace laravel-seo\Seo\Test;
 
 use Illuminate\Support\HtmlString;
-use romanzipp\Seo\Builders\StructBuilder;
-use romanzipp\Seo\Structs\Meta;
-use romanzipp\Seo\Structs\Title;
+use laravel-seo\Seo\Builders\StructBuilder;
+use laravel-seo\Seo\Structs\Meta;
+use laravel-seo\Seo\Structs\Title;
 
 class RenderTest extends TestCase
 {

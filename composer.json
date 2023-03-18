@@ -5,7 +5,7 @@
     "type": "library",
     "authors": [
         {
-            "name": "romanzipp",
+            "name": "laravel-seo",
             "email": "ich@ich.wtf",
             "homepage": "https://ich.wtf"
         },
@@ -26,11 +26,11 @@
         "orchestra/testbench": ">=3.8",
         "phpstan/phpstan": "^0.12.99|^1.0",
         "phpunit/phpunit": "^7.0|^8.5.30|^9.0",
-        "romanzipp/php-cs-fixer-config": "^3.0"
+        "laravel-seo/php-cs-fixer-config": "^3.0"
     },
     "autoload": {
         "psr-4": {
-            "eim-solutions\\Seo\\": "src"
+            "larevel-seo\\Seo\\": "src"
         },
         "files": [
             "src/helpers.php"
@@ -38,7 +38,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "eim-solutions\\Seo\\Test\\": "tests"
+            "larevel-seo\\Seo\\Test\\": "tests"
         }
     },
     "scripts": {
@@ -47,10 +47,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "eim-solutions\\Seo\\Providers\\SeoServiceProvider"
+                "larevel-seo\\Seo\\Providers\\SeoServiceProvider"
             ],
             "aliases": {
-                "Seo": "eim-solutions\\Seo\\Facades\\Seo"
+                "Seo": "larevel-seo\\Seo\\Facades\\Seo"
             }
         }
     },

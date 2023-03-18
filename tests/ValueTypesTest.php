@@ -1,10 +1,10 @@
 <?php
 
-namespace romanzipp\Seo\Test;
+namespace laravel-seo\Seo\Test;
 
-use romanzipp\Seo\Helpers\Hook;
-use romanzipp\Seo\Structs\Meta;
-use romanzipp\Seo\Structs\Title;
+use laravel-seo\Seo\Helpers\Hook;
+use laravel-seo\Seo\Structs\Meta;
+use laravel-seo\Seo\Structs\Title;
 
 class ValueTypesTest extends TestCase
 {

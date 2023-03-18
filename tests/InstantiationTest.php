@@ -1,11 +1,11 @@
 <?php
 
-namespace romanzipp\Seo\Test;
+namespace laravel-seo\Seo\Test;
 
-use romanzipp\Seo\Facades\Seo;
-use romanzipp\Seo\Helpers\Hook;
-use romanzipp\Seo\Services\SeoService;
-use romanzipp\Seo\Structs\Meta;
+use laravel-seo\Seo\Facades\Seo;
+use laravel-seo\Seo\Helpers\Hook;
+use laravel-seo\Seo\Services\SeoService;
+use laravel-seo\Seo\Structs\Meta;
 
 class InstantiationTest extends TestCase
 {

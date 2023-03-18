@@ -1,11 +1,11 @@
 <?php
 
-namespace romanzipp\Seo\Structs;
+namespace laravel-seo\Seo\Structs;
 
-use romanzipp\Seo\Enums\HookTarget;
-use romanzipp\Seo\Structs\Traits\HookableTrait;
-use romanzipp\Seo\Values\Attribute;
-use romanzipp\Seo\Values\Body;
+use laravel-seo\Seo\Enums\HookTarget;
+use laravel-seo\Seo\Structs\Traits\HookableTrait;
+use laravel-seo\Seo\Values\Attribute;
+use laravel-seo\Seo\Values\Body;
 
 abstract class Struct
 {
@@ -30,14 +30,14 @@ abstract class Struct
     /**
      * Attributes.
      *
-     * @var array<string, \romanzipp\Seo\Values\Attribute>
+     * @var array<string, \laravel-seo\Seo\Values\Attribute>
      */
     protected $attributes = [];
 
     /**
      * Struct body.
      *
-     * @var \romanzipp\Seo\Values\Body|null
+     * @var \laravel-seo\Seo\Values\Body|null
      */
     protected $body = null;
 
@@ -92,7 +92,7 @@ abstract class Struct
     /**
      * Get struct body.
      *
-     * @return \romanzipp\Seo\Values\Body|null
+     * @return \laravel-seo\Seo\Values\Body|null
      */
     public function getBody(): ?Body
     {
@@ -102,7 +102,7 @@ abstract class Struct
     /**
      * Get struct attributes.
      *
-     * @return array<string, \romanzipp\Seo\Values\Attribute>
+     * @return array<string, \laravel-seo\Seo\Values\Attribute>
      */
     public function getAttributes(): array
     {
@@ -112,7 +112,7 @@ abstract class Struct
     /**
      * Get computed attributes. Converting objects to string values.
      *
-     * @return array<string, \romanzipp\Seo\Values\Attribute>
+     * @return array<string, \laravel-seo\Seo\Values\Attribute>
      */
     public function getComputedAttributes(): array
     {
@@ -124,7 +124,7 @@ abstract class Struct
      *
      * @param string $attribute
      *
-     * @return \romanzipp\Seo\Values\Attribute|null
+     * @return \laravel-seo\Seo\Values\Attribute|null
      */
     public function getComputedAttribute(string $attribute): ?Attribute
     {
@@ -144,7 +144,7 @@ abstract class Struct
     /**
      * Get all attributes with values that have been declared as unique.
      *
-     * @return \romanzipp\Seo\Values\Attribute[]
+     * @return \laravel-seo\Seo\Values\Attribute[]
      */
     public function getComputedUniqueAttributes(): array
     {

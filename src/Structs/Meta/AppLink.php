@@ -1,8 +1,8 @@
 <?php
 
-namespace romanzipp\Seo\Structs\Meta;
+namespace laravel-seo\Seo\Structs\Meta;
 
-use romanzipp\Seo\Structs\Meta;
+use laravel-seo\Seo\Structs\Meta;
 
 /**
  * @see https://github.com/joshbuchea/HEAD#app-links

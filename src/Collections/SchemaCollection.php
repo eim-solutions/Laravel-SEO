@@ -1,19 +1,19 @@
 <?php
 
-namespace romanzipp\Seo\Collections;
+namespace laravel-seo\Seo\Collections;
 
-use romanzipp\Seo\Collections\Contracts\CollectionContract;
-use romanzipp\Seo\Schema\Schema as SchemaContainer;
+use laravel-seo\Seo\Collections\Contracts\CollectionContract;
+use laravel-seo\Seo\Schema\Schema as SchemaContainer;
 
 class SchemaCollection implements CollectionContract
 {
     /**
-     * @var \romanzipp\Seo\Schema\Schema[]
+     * @var \laravel-seo\Seo\Schema\Schema[]
      */
     protected $schemas = [];
 
     /**
-     * @return \romanzipp\Seo\Schema\Schema[]
+     * @return \laravel-seo\Seo\Schema\Schema[]
      */
     public function all(): array
     {
@@ -26,7 +26,7 @@ class SchemaCollection implements CollectionContract
     }
 
     /**
-     * @param \romanzipp\Seo\Schema\Schema[] $schemas
+     * @param \laravel-seo\Seo\Schema\Schema[] $schemas
      */
     public function set(array $schemas): void
     {

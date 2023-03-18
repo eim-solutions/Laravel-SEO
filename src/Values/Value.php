@@ -1,6 +1,6 @@
 <?php
 
-namespace romanzipp\Seo\Values;
+namespace laravel-seo\Seo\Values;
 
 class Value
 {

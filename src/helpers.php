@@ -1,6 +1,6 @@
 <?php
 
-use romanzipp\Seo\Services\SeoService;
+use laravel-seo\Seo\Services\SeoService;
 
 if ( ! function_exists('seo')) {
     /**
@@ -8,7 +8,7 @@ if ( ! function_exists('seo')) {
      *
      * @param string|null $section
      *
-     * @return \romanzipp\Seo\Services\SeoService
+     * @return \laravel-seo\Seo\Services\SeoService
      */
     function seo(string $section = null): SeoService
     {

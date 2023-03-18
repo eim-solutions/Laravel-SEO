@@ -1,9 +1,9 @@
 <?php
 
-namespace romanzipp\Seo\Services\Traits;
+namespace laravel-seo\Seo\Services\Traits;
 
 use Illuminate\Support\Arr;
-use romanzipp\Seo\Schema\Schema as SchemaContainer;
+use laravel-seo\Seo\Schema\Schema as SchemaContainer;
 use Spatie\SchemaOrg\Schema;
 use Spatie\SchemaOrg\Type;
 

@@ -1,18 +1,18 @@
 <?php
 
-namespace romanzipp\Seo\Conductors;
+namespace laravel-seo\Seo\Conductors;
 
-use romanzipp\Seo\Conductors\ArrayStructures\AbstractArraySchema;
-use romanzipp\Seo\Conductors\ArrayStructures\AttributeArraySchema;
-use romanzipp\Seo\Conductors\ArrayStructures\NestedArraySchema;
-use romanzipp\Seo\Conductors\ArrayStructures\SingleArraySchema;
-use romanzipp\Seo\Services\SeoService;
-use romanzipp\Seo\Structs;
+use laravel-seo\Seo\Conductors\ArrayStructures\AbstractArraySchema;
+use laravel-seo\Seo\Conductors\ArrayStructures\AttributeArraySchema;
+use laravel-seo\Seo\Conductors\ArrayStructures\NestedArraySchema;
+use laravel-seo\Seo\Conductors\ArrayStructures\SingleArraySchema;
+use laravel-seo\Seo\Services\SeoService;
+use laravel-seo\Seo\Structs;
 
 class ArrayFormatConductor
 {
     /**
-     * @var \romanzipp\Seo\Services\SeoService
+     * @var \laravel-seo\Seo\Services\SeoService
      */
     private $seo;
 
@@ -24,7 +24,7 @@ class ArrayFormatConductor
     /**
      * Get the predefined schemas for array formatting.
      *
-     * @return array<string, \romanzipp\Seo\Conductors\ArrayStructures\AbstractArraySchema>
+     * @return array<string, \laravel-seo\Seo\Conductors\ArrayStructures\AbstractArraySchema>
      */
     private function getSchemas(): array
     {
@@ -67,7 +67,7 @@ class ArrayFormatConductor
              *     $data = [
              *         'twitter' => [
              *             'card' => 'summary',
-             *             'creator' => '@romanzipp'
+             *             'creator' => '@laravel-seo'
              *         ]
              *     ];
              */
@@ -116,7 +116,7 @@ class ArrayFormatConductor
      *
      * @param string $index
      *
-     * @return \romanzipp\Seo\Conductors\ArrayStructures\AbstractArraySchema|null
+     * @return \laravel-seo\Seo\Conductors\ArrayStructures\AbstractArraySchema|null
      */
     private function getSchema(string $index): ?AbstractArraySchema
     {

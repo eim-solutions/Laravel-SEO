@@ -5,7 +5,7 @@ Hooks allow the modification of a Structs **body** or **attributes**.
 ### Adding hooks to Structs
 
 ```php
-use romanzipp\Seo\Helpers\Hook;
+use laravel-seo\Seo\Helpers\Hook;
 
 $hook = Hook::make()
     ->onBody()
@@ -17,7 +17,7 @@ $hook = Hook::make()
 **Method 1**: Call the `SeoService::hook()` method to apply a given `$hook` to a Struct class.
 
 ```php
-use romanzipp\Seo\Structs\Title;
+use laravel-seo\Seo\Structs\Title;
 
 seo()->hook(Title::class, $hook);
 ```
@@ -25,7 +25,7 @@ seo()->hook(Title::class, $hook);
 **Method 2**: Apply the `$hook` directly to the Struct.
 
 ```php
-use romanzipp\Seo\Structs\Title;
+use laravel-seo\Seo\Structs\Title;
 
 Title::hook($hook);
 ```
@@ -39,8 +39,8 @@ For example, you want to append a site name to the body of every `<title>` tag:
 #### Modify the `body` of all `Title` Structs.
 
 ```php
-use romanzipp\Seo\Helpers\Hook;
-use romanzipp\Seo\Structs\Title;
+use laravel-seo\Seo\Helpers\Hook;
+use laravel-seo\Seo\Structs\Title;
 
 Title::hook(
     Hook::make()
@@ -52,7 +52,7 @@ Title::hook(
 ```
 
 ```php
-use romanzipp\Seo\Structs\Title;
+use laravel-seo\Seo\Structs\Title;
 
 seo()->add(Title::make()->body('Home'));  // <title>Home | Site-Name</title>
 seo()->add(Title::make()->body(null));    // <title>Site-Name</title>
@@ -63,8 +63,8 @@ seo()->add(Title::make()->body(null));    // <title>Site-Name</title>
 #### Modify any attribute of the `OpenGraph` Struct which has the attribute `property` with value `og:site_name`
 
 ```php
-use romanzipp\Seo\Helpers\Hook;
-use romanzipp\Seo\Structs\Meta\OpenGraph;
+use laravel-seo\Seo\Helpers\Hook;
+use laravel-seo\Seo\Structs\Meta\OpenGraph;
 
 OpenGraph::hook(
     Hook::make()
@@ -84,8 +84,8 @@ OpenGraph::hook(
 #### Modify the `content` attribute of the `OpenGraph` Struct which has the attribute `property` with value `og:title`
 
 ```php
-use romanzipp\Seo\Helpers\Hook;
-use romanzipp\Seo\Structs\Meta\OpenGraph;
+use laravel-seo\Seo\Helpers\Hook;
+use laravel-seo\Seo\Structs\Meta\OpenGraph;
 
 OpenGraph::hook(
     Hook::make()
@@ -98,7 +98,7 @@ OpenGraph::hook(
 ```
 
 ```php
-use romanzipp\Seo\Structs\Meta\OpenGraph;
+use laravel-seo\Seo\Structs\Meta\OpenGraph;
 
 $seo->add(OpenGraph::make()->property('title')->content('Home'));  // <meta ... content="Home | Site-Name" />
 $seo->add(OpenGraph::make()->property('title')->content(null));    // <meta ... content="Site-Name" />
@@ -109,7 +109,7 @@ $seo->add(OpenGraph::make()->property('title')->content(null));    // <meta ... 
 ### Hook Instance
 
 ```php
-use romanzipp\Seo\Helpers\Hook;
+use laravel-seo\Seo\Helpers\Hook;
 
 $hook = Hook::make();
 

@@ -1,13 +1,13 @@
 <?php
 
-namespace romanzipp\Seo\Test;
+namespace laravel-seo\Seo\Test;
 
-use romanzipp\Seo\Structs\Link;
-use romanzipp\Seo\Structs\Meta;
-use romanzipp\Seo\Structs\Meta\Description;
-use romanzipp\Seo\Structs\Meta\OpenGraph;
-use romanzipp\Seo\Structs\Meta\Twitter;
-use romanzipp\Seo\Structs\Title;
+use laravel-seo\Seo\Structs\Link;
+use laravel-seo\Seo\Structs\Meta;
+use laravel-seo\Seo\Structs\Meta\Description;
+use laravel-seo\Seo\Structs\Meta\OpenGraph;
+use laravel-seo\Seo\Structs\Meta\Twitter;
+use laravel-seo\Seo\Structs\Title;
 
 class ArrayFormatTest extends TestCase
 {

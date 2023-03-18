@@ -7,8 +7,8 @@ module.exports = {
     themeConfig: {
         nav: [
             { text: 'Home', link: '/' },
-            { text: 'GitHub', link: 'https://github.com/romanzipp/Laravel-SEO' },
-            { text: 'Packagist', link: 'https://packagist.org/packages/romanzipp/laravel-seo' },
+            { text: 'GitHub', link: 'https://github.com/laravel-seo/Laravel-SEO' },
+            { text: 'Packagist', link: 'https://packagist.org/packages/laravel-seo/laravel-seo' },
         ],
         sidebar: [
             '/',

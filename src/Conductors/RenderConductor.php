@@ -1,18 +1,18 @@
 <?php
 
-namespace romanzipp\Seo\Conductors;
+namespace laravel-seo\Seo\Conductors;
 
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\HtmlString;
-use romanzipp\Seo\Builders\StructBuilder;
+use laravel-seo\Seo\Builders\StructBuilder;
 use Spatie\SchemaOrg\Type;
 
 class RenderConductor implements Htmlable, Renderable, Arrayable
 {
     /**
-     * @var \romanzipp\Seo\Structs\Struct[]
+     * @var \laravel-seo\Seo\Structs\Struct[]
      */
     private $structs;
 
@@ -24,7 +24,7 @@ class RenderConductor implements Htmlable, Renderable, Arrayable
     /**
      * RenderConductor constructor.
      *
-     * @param \romanzipp\Seo\Structs\Struct[] $structs
+     * @param \laravel-seo\Seo\Structs\Struct[] $structs
      * @param \Spatie\SchemaOrg\Type[] $schemes
      */
     public function __construct(array $structs, array $schemes)
@@ -36,7 +36,7 @@ class RenderConductor implements Htmlable, Renderable, Arrayable
     /**
      * Get all structs.
      *
-     * @return \romanzipp\Seo\Structs\Struct[]
+     * @return \laravel-seo\Seo\Structs\Struct[]
      */
     public function getStructs(): array
     {

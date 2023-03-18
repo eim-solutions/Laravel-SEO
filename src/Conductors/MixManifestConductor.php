@@ -1,16 +1,16 @@
 <?php
 
-namespace romanzipp\Seo\Conductors;
+namespace laravel-seo\Seo\Conductors;
 
-use romanzipp\Seo\Conductors\Types\ManifestAsset;
-use romanzipp\Seo\Exceptions\ManifestNotFoundException;
-use romanzipp\Seo\Services\SeoService;
-use romanzipp\Seo\Structs\Link;
+use laravel-seo\Seo\Conductors\Types\ManifestAsset;
+use laravel-seo\Seo\Exceptions\ManifestNotFoundException;
+use laravel-seo\Seo\Services\SeoService;
+use laravel-seo\Seo\Structs\Link;
 
 class MixManifestConductor
 {
     /**
-     * @var \romanzipp\Seo\Services\SeoService
+     * @var \laravel-seo\Seo\Services\SeoService
      */
     private $seo;
 
@@ -20,7 +20,7 @@ class MixManifestConductor
     private $path;
 
     /**
-     * @var \romanzipp\Seo\Conductors\Types\ManifestAsset[]
+     * @var \laravel-seo\Seo\Conductors\Types\ManifestAsset[]
      */
     private $assets = [];
 
@@ -52,7 +52,7 @@ class MixManifestConductor
     }
 
     /**
-     * @return \romanzipp\Seo\Conductors\Types\ManifestAsset[]
+     * @return \laravel-seo\Seo\Conductors\Types\ManifestAsset[]
      */
     public function getAssets(): array
     {
@@ -64,7 +64,7 @@ class MixManifestConductor
      *
      * @param \Closure $callback
      *
-     * @return \romanzipp\Seo\Conductors\MixManifestConductor
+     * @return \laravel-seo\Seo\Conductors\MixManifestConductor
      */
     public function map(\Closure $callback): self
     {
@@ -100,9 +100,9 @@ class MixManifestConductor
     /**
      * @param string|null $path
      *
-     * @throws \romanzipp\Seo\Exceptions\ManifestNotFoundException
+     * @throws \laravel-seo\Seo\Exceptions\ManifestNotFoundException
      *
-     * @return \romanzipp\Seo\Conductors\MixManifestConductor
+     * @return \laravel-seo\Seo\Conductors\MixManifestConductor
      */
     public function load(string $path = null): self
     {
@@ -126,7 +126,7 @@ class MixManifestConductor
     }
 
     /**
-     * @param \romanzipp\Seo\Conductors\Types\ManifestAsset $asset
+     * @param \laravel-seo\Seo\Conductors\Types\ManifestAsset $asset
      *
      * @return void
      */
@@ -148,9 +148,9 @@ class MixManifestConductor
     }
 
     /**
-     * @throws \romanzipp\Seo\Exceptions\ManifestNotFoundException
+     * @throws \laravel-seo\Seo\Exceptions\ManifestNotFoundException
      *
-     * @return \romanzipp\Seo\Conductors\Types\ManifestAsset[]
+     * @return \laravel-seo\Seo\Conductors\Types\ManifestAsset[]
      */
     private function readContents(): array
     {

@@ -1,8 +1,8 @@
 <?php
 
-namespace romanzipp\Seo\Test\Structs;
+namespace laravel-seo\Seo\Test\Structs;
 
-use romanzipp\Seo\Structs\Struct;
+use laravel-seo\Seo\Structs\Struct;
 
 class UniqueSingleAttributeStruct extends Struct
 {

@@ -1,8 +1,8 @@
 <?php
 
-return romanzipp\Fixer\Config::make()
+return laravel-seo\Fixer\Config::make()
     ->in(__DIR__)
     ->preset(
-        new romanzipp\Fixer\Presets\PrettyLaravel()
+        new laravel-seo\Fixer\Presets\PrettyLaravel()
     )
     ->out();

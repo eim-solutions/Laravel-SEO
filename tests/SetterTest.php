@@ -1,9 +1,9 @@
 <?php
 
-namespace romanzipp\Seo\Test;
+namespace laravel-seo\Seo\Test;
 
-use romanzipp\Seo\Structs\Meta\OpenGraph;
-use romanzipp\Seo\Structs\Meta\Twitter;
+use laravel-seo\Seo\Structs\Meta\OpenGraph;
+use laravel-seo\Seo\Structs\Meta\Twitter;
 
 class SetterTest extends TestCase
 {

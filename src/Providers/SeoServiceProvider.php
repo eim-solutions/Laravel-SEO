@@ -1,12 +1,12 @@
 <?php
 
-namespace romanzipp\Seo\Providers;
+namespace laravel-seo\Seo\Providers;
 
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\ServiceProvider;
-use romanzipp\Seo\Collections\SchemaCollection;
-use romanzipp\Seo\Collections\StructCollection;
-use romanzipp\Seo\Services\SeoService;
+use laravel-seo\Seo\Collections\SchemaCollection;
+use laravel-seo\Seo\Collections\StructCollection;
+use laravel-seo\Seo\Services\SeoService;
 
 class SeoServiceProvider extends ServiceProvider
 {

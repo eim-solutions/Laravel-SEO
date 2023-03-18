@@ -1,6 +1,6 @@
 <?php
 
-namespace romanzipp\Seo\Conductors\Types;
+namespace laravel-seo\Seo\Conductors\Types;
 
 class ManifestAsset
 {

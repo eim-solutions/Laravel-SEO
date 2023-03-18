@@ -1,13 +1,13 @@
 <?php
 
-namespace romanzipp\Seo\Test;
+namespace laravel-seo\Seo\Test;
 
-use romanzipp\Seo\Structs\Meta\Charset;
-use romanzipp\Seo\Structs\Meta\Robots;
-use romanzipp\Seo\Structs\Meta\Viewport;
-use romanzipp\Seo\Structs\Title;
-use romanzipp\Seo\Test\Structs\UniqueMultiAttributeStruct;
-use romanzipp\Seo\Test\Structs\UniqueSingleAttributeStruct;
+use laravel-seo\Seo\Structs\Meta\Charset;
+use laravel-seo\Seo\Structs\Meta\Robots;
+use laravel-seo\Seo\Structs\Meta\Viewport;
+use laravel-seo\Seo\Structs\Title;
+use laravel-seo\Seo\Test\Structs\UniqueMultiAttributeStruct;
+use laravel-seo\Seo\Test\Structs\UniqueSingleAttributeStruct;
 
 class CollisionTest extends TestCase
 {

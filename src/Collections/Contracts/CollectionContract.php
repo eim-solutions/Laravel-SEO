@@ -1,6 +1,6 @@
 <?php
 
-namespace romanzipp\Seo\Collections\Contracts;
+namespace laravel-seo\Seo\Collections\Contracts;
 
 interface CollectionContract
 {

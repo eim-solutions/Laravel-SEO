@@ -1,14 +1,14 @@
 <?php
 
-namespace romanzipp\Seo\Helpers;
+namespace laravel-seo\Seo\Helpers;
 
-use romanzipp\Seo\Enums\HookTarget;
+use laravel-seo\Seo\Enums\HookTarget;
 
 class Hook
 {
     /**
      * Struct attribute to modify, defined in the
-     * \romanzipp\Seo\Enums\HookTarget enum.
+     * \laravel-seo\Seo\Enums\HookTarget enum.
      *
      * @var int
      */
@@ -60,9 +60,9 @@ class Hook
      */
 
     /**
-     * Get the specified hook target defined in \romanzipp\Seo\Enums\HookTarget.
+     * Get the specified hook target defined in \laravel-seo\Seo\Enums\HookTarget.
      *
-     * @return int \romanzipp\Seo\Enums\HookTarget enum value
+     * @return int \laravel-seo\Seo\Enums\HookTarget enum value
      */
     public function getTarget(): int
     {
@@ -179,7 +179,7 @@ class Hook
      *
      * @param bool $status State
      *
-     * @return \romanzipp\Seo\Helpers\Hook
+     * @return \laravel-seo\Seo\Helpers\Hook
      */
     public function setExecuted(bool $status): self
     {

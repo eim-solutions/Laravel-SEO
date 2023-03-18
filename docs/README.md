@@ -3,7 +3,7 @@
 ## Installation
 
 ```
-composer require romanzipp/laravel-seo
+composer require laravel-seo/laravel-seo
 ```
 
 ## Configuration
@@ -11,7 +11,7 @@ composer require romanzipp/laravel-seo
 Copy configuration to config folder:
 
 ```
-$ php artisan vendor:publish --provider="romanzipp\Seo\Providers\SeoServiceProvider"
+$ php artisan vendor:publish --provider="laravel-seo\Seo\Providers\SeoServiceProvider"
 ```
 
 ## Integrations
@@ -30,7 +30,7 @@ See the [Schema.org integration docs](/schema-org.html) for more information.
 
 ## Upgrading
 
-- [Upgrading from 1.0 to **2.0**](https://github.com/romanzipp/Laravel-SEO/releases/tag/2.0.0)
+- [Upgrading from 1.0 to **2.0**](https://github.com/laravel-seo/Laravel-SEO/releases/tag/2.0.0)
 
 ## Cheat Sheet
 

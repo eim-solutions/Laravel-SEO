@@ -1,9 +1,9 @@
 <?php
 
-namespace romanzipp\Seo\Builders;
+namespace laravel-seo\Seo\Builders;
 
 use Illuminate\Support\HtmlString;
-use romanzipp\Seo\Structs\Struct;
+use laravel-seo\Seo\Structs\Struct;
 
 class StructBuilder
 {
@@ -30,14 +30,14 @@ class StructBuilder
     /**
      * Struct object.
      *
-     * @var \romanzipp\Seo\Structs\Struct
+     * @var \laravel-seo\Seo\Structs\Struct
      */
     private $struct;
 
     /**
      * Constructor.
      *
-     * @param \romanzipp\Seo\Structs\Struct $struct
+     * @param \laravel-seo\Seo\Structs\Struct $struct
      */
     public function __construct(Struct $struct)
     {
@@ -47,7 +47,7 @@ class StructBuilder
     /**
      * Instantly build struct.
      *
-     * @param \romanzipp\Seo\Structs\Struct $struct
+     * @param \laravel-seo\Seo\Structs\Struct $struct
      *
      * @return \Illuminate\Support\HtmlString
      */

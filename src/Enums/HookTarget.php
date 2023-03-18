@@ -1,6 +1,6 @@
 <?php
 
-namespace romanzipp\Seo\Enums;
+namespace laravel-seo\Seo\Enums;
 
 class HookTarget
 {

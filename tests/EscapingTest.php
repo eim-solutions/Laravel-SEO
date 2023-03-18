@@ -1,9 +1,9 @@
 <?php
 
-namespace romanzipp\Seo\Test;
+namespace laravel-seo\Seo\Test;
 
-use romanzipp\Seo\Structs\Meta;
-use romanzipp\Seo\Structs\Title;
+use laravel-seo\Seo\Structs\Meta;
+use laravel-seo\Seo\Structs\Title;
 
 class EscapingTest extends TestCase
 {

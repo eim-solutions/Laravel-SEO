@@ -1,8 +1,8 @@
 <?php
 
-namespace romanzipp\Seo\Schema;
+namespace laravel-seo\Seo\Schema;
 
-use romanzipp\Seo\Structs\Struct;
+use laravel-seo\Seo\Structs\Struct;
 use Spatie\SchemaOrg\Type;
 
 final class Schema

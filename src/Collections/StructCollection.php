@@ -1,9 +1,9 @@
 <?php
 
-namespace romanzipp\Seo\Collections;
+namespace laravel-seo\Seo\Collections;
 
-use romanzipp\Seo\Collections\Contracts\CollectionContract;
-use romanzipp\Seo\Structs\Struct;
+use laravel-seo\Seo\Collections\Contracts\CollectionContract;
+use laravel-seo\Seo\Structs\Struct;
 
 /**
  * The Seo class functions as an intermediate layer between the laravel dependency container
@@ -14,12 +14,12 @@ use romanzipp\Seo\Structs\Struct;
 class StructCollection implements CollectionContract
 {
     /**
-     * @var \romanzipp\Seo\Structs\Struct[]
+     * @var \laravel-seo\Seo\Structs\Struct[]
      */
     protected $structs = [];
 
     /**
-     * @return \romanzipp\Seo\Structs\Struct[]
+     * @return \laravel-seo\Seo\Structs\Struct[]
      */
     public function all(): array
     {
@@ -32,7 +32,7 @@ class StructCollection implements CollectionContract
     }
 
     /**
-     * @param \romanzipp\Seo\Structs\Struct[] $structs
+     * @param \laravel-seo\Seo\Structs\Struct[] $structs
      */
     public function set(array $structs): void
     {

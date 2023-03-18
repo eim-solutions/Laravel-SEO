@@ -13,6 +13,6 @@ git init
 git add -A
 git commit -m 'deploy'
 
-git push -f git@github.com:romanzipp/Laravel-SEO.git master:gh-pages
+git push -f git@github.com:laravel-seo/Laravel-SEO.git master:gh-pages
 
 cd -

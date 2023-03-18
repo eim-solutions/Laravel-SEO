@@ -1,11 +1,11 @@
 <?php
 
-namespace romanzipp\Seo\Test;
+namespace laravel-seo\Seo\Test;
 
-use romanzipp\Seo\Conductors\MixManifestConductor;
-use romanzipp\Seo\Conductors\Types\ManifestAsset;
-use romanzipp\Seo\Exceptions\ManifestNotFoundException;
-use romanzipp\Seo\Structs\Link;
+use laravel-seo\Seo\Conductors\MixManifestConductor;
+use laravel-seo\Seo\Conductors\Types\ManifestAsset;
+use laravel-seo\Seo\Exceptions\ManifestNotFoundException;
+use laravel-seo\Seo\Structs\Link;
 
 class MixManifestTest extends TestCase
 {

@@ -5,8 +5,8 @@
 You can access the SEO service in many different ways. Just use what you prefer! We will use the `seo()` function in this documentaiton.
 
 ```php
-use romanzipp\Seo\Facades\Seo;
-use romanzipp\Seo\Services\SeoService;
+use laravel-seo\Seo\Facades\Seo;
+use laravel-seo\Seo\Services\SeoService;
 
 $seo = seo();
 
@@ -77,7 +77,7 @@ Further reading: [Adding single structs](/structs.html#adding-single-structs)
 #### Single Structs
 
 ```php
-use romanzipp\Seo\Structs\Title;
+use laravel-seo\Seo\Structs\Title;
 
 seo()->add(
     Title::make()->body('My Title')
@@ -87,8 +87,8 @@ seo()->add(
 #### Multiple Structs
 
 ```php
-use romanzipp\Seo\Structs\Title;
-use romanzipp\Seo\Structs\Meta\Description;
+use laravel-seo\Seo\Structs\Title;
+use laravel-seo\Seo\Structs\Meta\Description;
 
 seo()->addMany([
     Title::make()->body('My Title'),
@@ -99,7 +99,7 @@ seo()->addMany([
 #### Conditional additions
 
 ```php
-use romanzipp\Seo\Structs\Title;
+use laravel-seo\Seo\Structs\Title;
 
 $boolean = random_int(0, 1) === 1;
 
@@ -127,9 +127,9 @@ seo()->addFromArray([
 
     'twitter' => [
         // <meta name="twitter:card" content="summary" />
-        // <meta name="twitter:creator" content="@romanzipp" />
+        // <meta name="twitter:creator" content="@laravel-seo" />
         'card' => 'summary',
-        'creator' => '@romanzipp',
+        'creator' => '@laravel-seo',
     ],
 
     'og' => [
@@ -218,7 +218,7 @@ Of course, you can also pass the section as parameter to the helper function.
 ### Using sections with dependency resolving
 
 ```php
-use romanzipp\Seo\Services\SeoService;
+use laravel-seo\Seo\Services\SeoService;
 
 $seo = app(SeoService::class);
 
@@ -236,7 +236,7 @@ $seo->twitter('card', 'summary');
 
 ## Macros
 
-The `romanzipp\Seo\Services\SeoService` class uses the Laravel `Macroable` trait which allows creating short macros.
+The `laravel-seo\Seo\Services\SeoService` class uses the Laravel `Macroable` trait which allows creating short macros.
 
 ### Example
 
@@ -245,8 +245,8 @@ Let's say you want to display a page title in the document body but added a hook
 In this case, we'll create a macro to retreive the original Title Struct body value.
 
 ```php
-use romanzipp\Seo\Facades\Seo;
-use romanzipp\Seo\Structs\Title;
+use laravel-seo\Seo\Facades\Seo;
+use laravel-seo\Seo\Structs\Title;
 
 Seo::macro('getTitle', function () {
 

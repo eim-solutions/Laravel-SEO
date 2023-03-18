@@ -1,18 +1,18 @@
 <?php
 
-namespace romanzipp\Seo\Services;
+namespace laravel-seo\Seo\Services;
 
 use Illuminate\Support\Traits\Macroable;
-use romanzipp\Seo\Collections\SchemaCollection;
-use romanzipp\Seo\Collections\StructCollection;
-use romanzipp\Seo\Conductors\ArrayFormatConductor;
-use romanzipp\Seo\Conductors\MixManifestConductor;
-use romanzipp\Seo\Conductors\RenderConductor;
-use romanzipp\Seo\Helpers\Hook;
-use romanzipp\Seo\Services\Traits\CollisionTrait;
-use romanzipp\Seo\Services\Traits\SchemaOrgTrait;
-use romanzipp\Seo\Services\Traits\ShorthandSetterTrait;
-use romanzipp\Seo\Structs\Struct;
+use laravel-seo\Seo\Collections\SchemaCollection;
+use laravel-seo\Seo\Collections\StructCollection;
+use laravel-seo\Seo\Conductors\ArrayFormatConductor;
+use laravel-seo\Seo\Conductors\MixManifestConductor;
+use laravel-seo\Seo\Conductors\RenderConductor;
+use laravel-seo\Seo\Helpers\Hook;
+use laravel-seo\Seo\Services\Traits\CollisionTrait;
+use laravel-seo\Seo\Services\Traits\SchemaOrgTrait;
+use laravel-seo\Seo\Services\Traits\ShorthandSetterTrait;
+use laravel-seo\Seo\Structs\Struct;
 
 class SeoService
 {
@@ -39,20 +39,20 @@ class SeoService
     /**
      * Applied schema.org schemes.
      *
-     * @var \romanzipp\Seo\Collections\SchemaCollection
+     * @var \laravel-seo\Seo\Collections\SchemaCollection
      */
     protected $schemaCollection;
 
     /**
-     * @var \romanzipp\Seo\Collections\StructCollection
+     * @var \laravel-seo\Seo\Collections\StructCollection
      */
     protected $structCollection;
 
     /**
      * Constructor.
      *
-     * @param \romanzipp\Seo\Collections\StructCollection $structCollection
-     * @param \romanzipp\Seo\Collections\SchemaCollection $schemaCollection
+     * @param \laravel-seo\Seo\Collections\StructCollection $structCollection
+     * @param \laravel-seo\Seo\Collections\SchemaCollection $schemaCollection
      */
     public function __construct(StructCollection $structCollection, SchemaCollection $schemaCollection)
     {
@@ -98,7 +98,7 @@ class SeoService
     /**
      * Get structs.
      *
-     * @return \romanzipp\Seo\Structs\Struct[]
+     * @return \laravel-seo\Seo\Structs\Struct[]
      */
     public function getStructs(): array
     {
@@ -112,7 +112,7 @@ class SeoService
      *
      * @param string $class
      *
-     * @return \romanzipp\Seo\Structs\Struct|null
+     * @return \laravel-seo\Seo\Structs\Struct|null
      */
     public function getStruct(string $class): ?Struct
     {
@@ -130,7 +130,7 @@ class SeoService
     /**
      * Set structs.
      *
-     * @param \romanzipp\Seo\Structs\Struct[] $structCollection
+     * @param \laravel-seo\Seo\Structs\Struct[] $structCollection
      */
     public function setStructCollection(array $structCollection): void
     {
@@ -165,7 +165,7 @@ class SeoService
      * Append a given struct. This is an internal method called by all add/set public methods
      * which also sets the current section to the struct.
      *
-     * @param \romanzipp\Seo\Structs\Struct $struct
+     * @param \laravel-seo\Seo\Structs\Struct $struct
      */
     public function appendStruct(Struct $struct): void
     {
@@ -210,7 +210,7 @@ class SeoService
     /**
      * Add many structs.
      *
-     * @param \romanzipp\Seo\Structs\Struct[] $structs
+     * @param \laravel-seo\Seo\Structs\Struct[] $structs
      *
      * @return $this
      */
@@ -242,7 +242,7 @@ class SeoService
      * alias for the Struct::hook() method.
      *
      * @param string $structClass
-     * @param \romanzipp\Seo\Helpers\Hook $hook
+     * @param \laravel-seo\Seo\Helpers\Hook $hook
      *
      * @return void
      */
@@ -252,7 +252,7 @@ class SeoService
     }
 
     /**
-     * @return \romanzipp\Seo\Conductors\MixManifestConductor
+     * @return \laravel-seo\Seo\Conductors\MixManifestConductor
      */
     public function mix(): MixManifestConductor
     {
@@ -260,7 +260,7 @@ class SeoService
     }
 
     /**
-     * @return \romanzipp\Seo\Conductors\RenderConductor
+     * @return \laravel-seo\Seo\Conductors\RenderConductor
      */
     public function render(): RenderConductor
     {
@@ -271,7 +271,7 @@ class SeoService
     }
 
     /**
-     * @return \romanzipp\Seo\Conductors\ArrayFormatConductor
+     * @return \laravel-seo\Seo\Conductors\ArrayFormatConductor
      */
     public function arrayFormat(): ArrayFormatConductor
     {

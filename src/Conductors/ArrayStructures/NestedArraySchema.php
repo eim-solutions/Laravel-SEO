@@ -1,6 +1,6 @@
 <?php
 
-namespace romanzipp\Seo\Conductors\ArrayStructures;
+namespace laravel-seo\Seo\Conductors\ArrayStructures;
 
 class NestedArraySchema extends AbstractArraySchema
 {

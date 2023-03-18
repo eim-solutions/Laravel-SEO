@@ -1,13 +1,13 @@
 <?php
 
-namespace romanzipp\Seo\Test;
+namespace laravel-seo\Seo\Test;
 
-use romanzipp\Seo\Structs\Link\Canonical;
-use romanzipp\Seo\Structs\Meta;
-use romanzipp\Seo\Structs\Meta\Charset;
-use romanzipp\Seo\Structs\Meta\OpenGraph;
-use romanzipp\Seo\Structs\Meta\Twitter;
-use romanzipp\Seo\Structs\Meta\Viewport;
+use laravel-seo\Seo\Structs\Link\Canonical;
+use laravel-seo\Seo\Structs\Meta;
+use laravel-seo\Seo\Structs\Meta\Charset;
+use laravel-seo\Seo\Structs\Meta\OpenGraph;
+use laravel-seo\Seo\Structs\Meta\Twitter;
+use laravel-seo\Seo\Structs\Meta\Viewport;
 
 class ShorthandSettersTest extends TestCase
 {

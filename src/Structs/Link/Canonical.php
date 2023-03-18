@@ -1,9 +1,9 @@
 <?php
 
-namespace romanzipp\Seo\Structs\Link;
+namespace laravel-seo\Seo\Structs\Link;
 
-use romanzipp\Seo\Structs\Link;
-use romanzipp\Seo\Structs\Struct;
+use laravel-seo\Seo\Structs\Link;
+use laravel-seo\Seo\Structs\Struct;
 
 class Canonical extends Link
 {

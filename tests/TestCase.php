@@ -1,12 +1,12 @@
 <?php
 
-namespace romanzipp\Seo\Test;
+namespace laravel-seo\Seo\Test;
 
 use Orchestra\Testbench\TestCase as BaseTestCase;
 use PHPUnit\Framework\Constraint\RegularExpression;
-use romanzipp\Seo\Builders\StructBuilder;
-use romanzipp\Seo\Facades\Seo;
-use romanzipp\Seo\Providers\SeoServiceProvider;
+use laravel-seo\Seo\Builders\StructBuilder;
+use laravel-seo\Seo\Facades\Seo;
+use laravel-seo\Seo\Providers\SeoServiceProvider;
 
 abstract class TestCase extends BaseTestCase
 {

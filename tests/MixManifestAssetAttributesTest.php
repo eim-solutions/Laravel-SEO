@@ -1,8 +1,8 @@
 <?php
 
-namespace romanzipp\Seo\Test;
+namespace laravel-seo\Seo\Test;
 
-use romanzipp\Seo\Conductors\Types\ManifestAsset;
+use laravel-seo\Seo\Conductors\Types\ManifestAsset;
 
 class MixManifestAssetAttributesTest extends TestCase
 {

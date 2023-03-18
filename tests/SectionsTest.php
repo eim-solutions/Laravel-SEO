@@ -1,9 +1,9 @@
 <?php
 
-namespace romanzipp\Seo\Test;
+namespace laravel-seo\Seo\Test;
 
-use romanzipp\Seo\Services\SeoService;
-use romanzipp\Seo\Structs\Meta;
+use laravel-seo\Seo\Services\SeoService;
+use laravel-seo\Seo\Structs\Meta;
 use Spatie\SchemaOrg\NightClub;
 use Spatie\SchemaOrg\PetStore;
 

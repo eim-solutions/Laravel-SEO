@@ -1,9 +1,9 @@
 <?php
 
-namespace romanzipp\Seo\Facades;
+namespace laravel-seo\Seo\Facades;
 
 use Illuminate\Support\Facades\Facade;
-use romanzipp\Seo\Services\SeoService;
+use laravel-seo\Seo\Services\SeoService;
 
 /**
  * @method static void macro($name, $macro)
