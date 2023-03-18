@@ -12,7 +12,7 @@
         {
             "name": "vukasinjockovic",
             "email": "jockovicvukasin@gmail.com"
-        },
+        }
     ],
     "require": {
         "php": "^7.1|^8.0",
