@@ -1,9 +1,9 @@
 <?php
 
-namespace laravel-seo\Seo\Services\Traits;
+namespace LaravelSEO\Seo\Services\Traits;
 
 use Illuminate\Support\Arr;
-use laravel-seo\Seo\Schema\Schema as SchemaContainer;
+use LaravelSEO\Seo\Schema\Schema as SchemaContainer;
 use Spatie\SchemaOrg\Schema;
 use Spatie\SchemaOrg\Type;
 

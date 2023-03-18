@@ -1,8 +1,8 @@
 <?php
 
-namespace laravel-seo\Seo\Test\Structs;
+namespace LaravelSEO\Seo\Test\Structs;
 
-use laravel-seo\Seo\Structs\Struct;
+use LaravelSEO\Seo\Structs\Struct;
 
 class UniqueSingleAttributeStruct extends Struct
 {

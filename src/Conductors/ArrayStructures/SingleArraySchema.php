@@ -1,6 +1,6 @@
 <?php
 
-namespace laravel-seo\Seo\Conductors\ArrayStructures;
+namespace LaravelSEO\Seo\Conductors\ArrayStructures;
 
 class SingleArraySchema extends AbstractArraySchema
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace laravel-seo\Seo\Collections\Contracts;
+namespace LaravelSEO\Seo\Collections\Contracts;
 
 interface CollectionContract
 {

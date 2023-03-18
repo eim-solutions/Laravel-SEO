@@ -1,13 +1,13 @@
 <?php
 
-namespace laravel-seo\Seo\Test;
+namespace LaravelSEO\Seo\Test;
 
-use laravel-seo\Seo\Structs\Link;
-use laravel-seo\Seo\Structs\Meta;
-use laravel-seo\Seo\Structs\Meta\Description;
-use laravel-seo\Seo\Structs\Meta\OpenGraph;
-use laravel-seo\Seo\Structs\Meta\Twitter;
-use laravel-seo\Seo\Structs\Title;
+use LaravelSEO\Seo\Structs\Link;
+use LaravelSEO\Seo\Structs\Meta;
+use LaravelSEO\Seo\Structs\Meta\Description;
+use LaravelSEO\Seo\Structs\Meta\OpenGraph;
+use LaravelSEO\Seo\Structs\Meta\Twitter;
+use LaravelSEO\Seo\Structs\Title;
 
 class ArrayFormatTest extends TestCase
 {

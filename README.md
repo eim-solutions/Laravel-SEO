@@ -1,15 +1,15 @@
 # Laravel SEO
 
-[![Latest Stable Version](https://img.shields.io/packagist/v/laravel-seo/Laravel-SEO.svg?style=flat-square)](https://packagist.org/packages/laravel-seo/laravel-seo)
-[![Total Downloads](https://img.shields.io/packagist/dt/laravel-seo/Laravel-SEO.svg?style=flat-square)](https://packagist.org/packages/laravel-seo/laravel-seo)
-[![License](https://img.shields.io/packagist/l/laravel-seo/Laravel-SEO.svg?style=flat-square)](https://packagist.org/packages/laravel-seo/laravel-seo)
-[![GitHub Build Status](https://img.shields.io/github/actions/workflow/status/laravel-seo/Laravel-SEO/tests.yml?branch=master&style=flat-square)](https://github.com/laravel-seo/Laravel-SEO/actions)
+[![Latest Stable Version](https://img.shields.io/packagist/v/LaravelSEO/LaravelSEO.svg?style=flat-square)](https://packagist.org/packages/LaravelSEO/LaravelSEO)
+[![Total Downloads](https://img.shields.io/packagist/dt/LaravelSEO/LaravelSEO.svg?style=flat-square)](https://packagist.org/packages/LaravelSEO/LaravelSEO)
+[![License](https://img.shields.io/packagist/l/LaravelSEO/LaravelSEO.svg?style=flat-square)](https://packagist.org/packages/LaravelSEO/LaravelSEO)
+[![GitHub Build Status](https://img.shields.io/github/actions/workflow/status/LaravelSEO/LaravelSEO/tests.yml?branch=master&style=flat-square)](https://github.com/LaravelSEO/LaravelSEO/actions)
 
 A SEO package made for maximum customization and flexibility.
 
 ## Documentation
 
-The full package documentation can be found on [laravel-seo.github.io/Laravel-SEO](https://laravel-seo.github.io/Laravel-SEO/)
+The full package documentation can be found on [LaravelSEO.github.io/LaravelSEO](https://LaravelSEO.github.io/LaravelSEO/)
 
 ![](docs/preview.png)
 

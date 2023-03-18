@@ -1,6 +1,6 @@
 <?php
 
-namespace laravel-seo\Seo\Exceptions;
+namespace LaravelSEO\Seo\Exceptions;
 
 class ManifestNotFoundException extends \Exception
 {

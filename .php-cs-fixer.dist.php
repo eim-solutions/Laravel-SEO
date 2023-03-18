@@ -1,8 +1,8 @@
 <?php
 
-return laravel-seo\Fixer\Config::make()
+return LaravelSEO\Fixer\Config::make()
     ->in(__DIR__)
     ->preset(
-        new laravel-seo\Fixer\Presets\PrettyLaravel()
+        new LaravelSEO\Fixer\Presets\PrettyLaravel()
     )
     ->out();

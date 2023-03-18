@@ -1,13 +1,13 @@
 <?php
 
-namespace laravel-seo\Seo\Test;
+namespace LaravelSEO\Seo\Test;
 
-use laravel-seo\Seo\Structs\Link\Canonical;
-use laravel-seo\Seo\Structs\Meta;
-use laravel-seo\Seo\Structs\Meta\Charset;
-use laravel-seo\Seo\Structs\Meta\OpenGraph;
-use laravel-seo\Seo\Structs\Meta\Twitter;
-use laravel-seo\Seo\Structs\Meta\Viewport;
+use LaravelSEO\Seo\Structs\Link\Canonical;
+use LaravelSEO\Seo\Structs\Meta;
+use LaravelSEO\Seo\Structs\Meta\Charset;
+use LaravelSEO\Seo\Structs\Meta\OpenGraph;
+use LaravelSEO\Seo\Structs\Meta\Twitter;
+use LaravelSEO\Seo\Structs\Meta\Viewport;
 
 class ShorthandSettersTest extends TestCase
 {

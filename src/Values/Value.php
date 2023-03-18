@@ -1,6 +1,6 @@
 <?php
 
-namespace laravel-seo\Seo\Values;
+namespace LaravelSEO\Seo\Values;
 
 class Value
 {

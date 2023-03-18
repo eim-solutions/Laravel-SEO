@@ -1,6 +1,6 @@
 <?php
 
-use laravel-seo\Seo\Services\SeoService;
+use LaravelSEO\Seo\Services\SeoService;
 
 if ( ! function_exists('seo')) {
     /**
@@ -8,7 +8,7 @@ if ( ! function_exists('seo')) {
      *
      * @param string|null $section
      *
-     * @return \laravel-seo\Seo\Services\SeoService
+     * @return \LaravelSEO\Seo\Services\SeoService
      */
     function seo(string $section = null): SeoService
     {

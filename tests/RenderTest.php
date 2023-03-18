@@ -1,11 +1,11 @@
 <?php
 
-namespace laravel-seo\Seo\Test;
+namespace LaravelSEO\Seo\Test;
 
 use Illuminate\Support\HtmlString;
-use laravel-seo\Seo\Builders\StructBuilder;
-use laravel-seo\Seo\Structs\Meta;
-use laravel-seo\Seo\Structs\Title;
+use LaravelSEO\Seo\Builders\StructBuilder;
+use LaravelSEO\Seo\Structs\Meta;
+use LaravelSEO\Seo\Structs\Title;
 
 class RenderTest extends TestCase
 {

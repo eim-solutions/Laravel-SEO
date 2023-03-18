@@ -1,19 +1,19 @@
 <?php
 
-namespace laravel-seo\Seo\Services\Traits;
+namespace LaravelSEO\Seo\Services\Traits;
 
 use Illuminate\Support\Arr;
-use laravel-seo\Seo\Services\SeoService;
-use laravel-seo\Seo\Structs\Link\Canonical;
-use laravel-seo\Seo\Structs\Meta;
-use laravel-seo\Seo\Structs\Meta\Charset;
-use laravel-seo\Seo\Structs\Meta\CsrfToken;
-use laravel-seo\Seo\Structs\Meta\Description;
-use laravel-seo\Seo\Structs\Meta\OpenGraph;
-use laravel-seo\Seo\Structs\Meta\Twitter;
-use laravel-seo\Seo\Structs\Meta\Viewport;
-use laravel-seo\Seo\Structs\Struct;
-use laravel-seo\Seo\Structs\Title;
+use LaravelSEO\Seo\Services\SeoService;
+use LaravelSEO\Seo\Structs\Link\Canonical;
+use LaravelSEO\Seo\Structs\Meta;
+use LaravelSEO\Seo\Structs\Meta\Charset;
+use LaravelSEO\Seo\Structs\Meta\CsrfToken;
+use LaravelSEO\Seo\Structs\Meta\Description;
+use LaravelSEO\Seo\Structs\Meta\OpenGraph;
+use LaravelSEO\Seo\Structs\Meta\Twitter;
+use LaravelSEO\Seo\Structs\Meta\Viewport;
+use LaravelSEO\Seo\Structs\Struct;
+use LaravelSEO\Seo\Structs\Title;
 
 trait ShorthandSetterTrait
 {

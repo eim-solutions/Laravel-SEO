@@ -1,11 +1,11 @@
 <?php
 
-namespace laravel-seo\Seo\Test;
+namespace LaravelSEO\Seo\Test;
 
-use laravel-seo\Seo\Conductors\MixManifestConductor;
-use laravel-seo\Seo\Conductors\Types\ManifestAsset;
-use laravel-seo\Seo\Exceptions\ManifestNotFoundException;
-use laravel-seo\Seo\Structs\Link;
+use LaravelSEO\Seo\Conductors\MixManifestConductor;
+use LaravelSEO\Seo\Conductors\Types\ManifestAsset;
+use LaravelSEO\Seo\Exceptions\ManifestNotFoundException;
+use LaravelSEO\Seo\Structs\Link;
 
 class MixManifestTest extends TestCase
 {

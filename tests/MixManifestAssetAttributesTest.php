@@ -1,8 +1,8 @@
 <?php
 
-namespace laravel-seo\Seo\Test;
+namespace LaravelSEO\Seo\Test;
 
-use laravel-seo\Seo\Conductors\Types\ManifestAsset;
+use LaravelSEO\Seo\Conductors\Types\ManifestAsset;
 
 class MixManifestAssetAttributesTest extends TestCase
 {

@@ -5,7 +5,7 @@
     "type": "library",
     "authors": [
         {
-            "name": "laravel-seo",
+            "name": "LaravelSEO",
             "email": "ich@ich.wtf",
             "homepage": "https://ich.wtf"
         },
@@ -26,11 +26,11 @@
         "orchestra/testbench": ">=3.8",
         "phpstan/phpstan": "^0.12.99|^1.0",
         "phpunit/phpunit": "^7.0|^8.5.30|^9.0",
-        "laravel-seo/php-cs-fixer-config": "^3.0"
+        "LaravelSEO/php-cs-fixer-config": "^3.0"
     },
     "autoload": {
         "psr-4": {
-            "larevel-seo\\Seo\\": "src"
+            "LaravelSEO\\Seo\\": "src"
         },
         "files": [
             "src/helpers.php"
@@ -38,7 +38,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "larevel-seo\\Seo\\Test\\": "tests"
+            "LaravelSEO\\Seo\\Test\\": "tests"
         }
     },
     "scripts": {
@@ -47,10 +47,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "larevel-seo\\Seo\\Providers\\SeoServiceProvider"
+                "LaravelSEO\\Seo\\Providers\\SeoServiceProvider"
             ],
             "aliases": {
-                "Seo": "larevel-seo\\Seo\\Facades\\Seo"
+                "Seo": "LaravelSEO\\Seo\\Facades\\Seo"
             }
         }
     },

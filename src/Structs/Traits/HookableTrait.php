@@ -1,24 +1,24 @@
 <?php
 
-namespace laravel-seo\Seo\Structs\Traits;
+namespace LaravelSEO\Seo\Structs\Traits;
 
-use laravel-seo\Seo\Enums\HookTarget;
-use laravel-seo\Seo\Helpers\Hook;
-use laravel-seo\Seo\Values\Attribute;
+use LaravelSEO\Seo\Enums\HookTarget;
+use LaravelSEO\Seo\Helpers\Hook;
+use LaravelSEO\Seo\Values\Attribute;
 
 trait HookableTrait
 {
     /**
      * Applied hooks.
      *
-     * @var \laravel-seo\Seo\Helpers\Hook[]
+     * @var \LaravelSEO\Seo\Helpers\Hook[]
      */
     protected static $hooks = [];
 
     /**
      * Add given Hook to the struct.
      *
-     * @param \laravel-seo\Seo\Helpers\Hook $hook
+     * @param \LaravelSEO\Seo\Helpers\Hook $hook
      *
      * @return void
      */
@@ -72,7 +72,7 @@ trait HookableTrait
      * @param int $target
      * @param mixed $data
      *
-     * @return \laravel-seo\Seo\Helpers\Hook[]
+     * @return \LaravelSEO\Seo\Helpers\Hook[]
      */
     public function getMatchingHooks(int $target, $data): array
     {
@@ -124,7 +124,7 @@ trait HookableTrait
      * Set the modified struct data from hook
      * as struct value.
      *
-     * @param \laravel-seo\Seo\Helpers\Hook $hook
+     * @param \LaravelSEO\Seo\Helpers\Hook $hook
      * @param mixed $data
      *
      * @return void

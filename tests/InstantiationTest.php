@@ -1,11 +1,11 @@
 <?php
 
-namespace laravel-seo\Seo\Test;
+namespace LaravelSEO\Seo\Test;
 
-use laravel-seo\Seo\Facades\Seo;
-use laravel-seo\Seo\Helpers\Hook;
-use laravel-seo\Seo\Services\SeoService;
-use laravel-seo\Seo\Structs\Meta;
+use LaravelSEO\Seo\Facades\Seo;
+use LaravelSEO\Seo\Helpers\Hook;
+use LaravelSEO\Seo\Services\SeoService;
+use LaravelSEO\Seo\Structs\Meta;
 
 class InstantiationTest extends TestCase
 {

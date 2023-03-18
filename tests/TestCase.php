@@ -1,12 +1,12 @@
 <?php
 
-namespace laravel-seo\Seo\Test;
+namespace LaravelSEO\Seo\Test;
 
 use Orchestra\Testbench\TestCase as BaseTestCase;
 use PHPUnit\Framework\Constraint\RegularExpression;
-use laravel-seo\Seo\Builders\StructBuilder;
-use laravel-seo\Seo\Facades\Seo;
-use laravel-seo\Seo\Providers\SeoServiceProvider;
+use LaravelSEO\Seo\Builders\StructBuilder;
+use LaravelSEO\Seo\Facades\Seo;
+use LaravelSEO\Seo\Providers\SeoServiceProvider;
 
 abstract class TestCase extends BaseTestCase
 {

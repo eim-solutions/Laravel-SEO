@@ -1,6 +1,6 @@
 <?php
 
-namespace laravel-seo\Seo\Conductors\Types;
+namespace LaravelSEO\Seo\Conductors\Types;
 
 class ManifestAsset
 {

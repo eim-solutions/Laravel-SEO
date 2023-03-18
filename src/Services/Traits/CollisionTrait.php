@@ -1,8 +1,8 @@
 <?php
 
-namespace laravel-seo\Seo\Services\Traits;
+namespace LaravelSEO\Seo\Services\Traits;
 
-use laravel-seo\Seo\Structs\Struct;
+use LaravelSEO\Seo\Structs\Struct;
 
 trait CollisionTrait
 {
@@ -13,7 +13,7 @@ trait CollisionTrait
     /**
      * Remove struct from existing structs.
      *
-     * @param \laravel-seo\Seo\Structs\Struct $struct
+     * @param \LaravelSEO\Seo\Structs\Struct $struct
      *
      * @return void
      */
@@ -35,9 +35,9 @@ trait CollisionTrait
     /**
      * Get matching struct duplicate.
      *
-     * @param \laravel-seo\Seo\Structs\Struct $struct
+     * @param \LaravelSEO\Seo\Structs\Struct $struct
      *
-     * @return (\laravel-seo\Seo\Structs\Struct|int|null)[]|null
+     * @return (\LaravelSEO\Seo\Structs\Struct|int|null)[]|null
      */
     public function getDuplicateStruct(Struct $struct): ?array
     {
@@ -46,7 +46,7 @@ trait CollisionTrait
         }
 
         foreach ($this->getStructs() as $key => $existing) {
-            /** @var \laravel-seo\Seo\Structs\Struct $existing */
+            /** @var \LaravelSEO\Seo\Structs\Struct $existing */
             if (get_class($existing) !== get_class($struct)) {
                 continue;
             }

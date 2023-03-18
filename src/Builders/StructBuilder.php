@@ -1,9 +1,9 @@
 <?php
 
-namespace laravel-seo\Seo\Builders;
+namespace LaravelSEO\Seo\Builders;
 
 use Illuminate\Support\HtmlString;
-use laravel-seo\Seo\Structs\Struct;
+use LaravelSEO\Seo\Structs\Struct;
 
 class StructBuilder
 {
@@ -30,14 +30,14 @@ class StructBuilder
     /**
      * Struct object.
      *
-     * @var \laravel-seo\Seo\Structs\Struct
+     * @var \LaravelSEO\Seo\Structs\Struct
      */
     private $struct;
 
     /**
      * Constructor.
      *
-     * @param \laravel-seo\Seo\Structs\Struct $struct
+     * @param \LaravelSEO\Seo\Structs\Struct $struct
      */
     public function __construct(Struct $struct)
     {
@@ -47,7 +47,7 @@ class StructBuilder
     /**
      * Instantly build struct.
      *
-     * @param \laravel-seo\Seo\Structs\Struct $struct
+     * @param \LaravelSEO\Seo\Structs\Struct $struct
      *
      * @return \Illuminate\Support\HtmlString
      */

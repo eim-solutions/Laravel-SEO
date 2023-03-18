@@ -1,9 +1,9 @@
 <?php
 
-namespace laravel-seo\Seo\Test;
+namespace LaravelSEO\Seo\Test;
 
-use laravel-seo\Seo\Structs\Meta\OpenGraph;
-use laravel-seo\Seo\Structs\Meta\Twitter;
+use LaravelSEO\Seo\Structs\Meta\OpenGraph;
+use LaravelSEO\Seo\Structs\Meta\Twitter;
 
 class SetterTest extends TestCase
 {

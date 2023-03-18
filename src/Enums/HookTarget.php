@@ -1,6 +1,6 @@
 <?php
 
-namespace laravel-seo\Seo\Enums;
+namespace LaravelSEO\Seo\Enums;
 
 class HookTarget
 {

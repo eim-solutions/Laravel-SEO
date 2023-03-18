@@ -1,14 +1,14 @@
 <?php
 
-namespace laravel-seo\Seo\Helpers;
+namespace LaravelSEO\Seo\Helpers;
 
-use laravel-seo\Seo\Enums\HookTarget;
+use LaravelSEO\Seo\Enums\HookTarget;
 
 class Hook
 {
     /**
      * Struct attribute to modify, defined in the
-     * \laravel-seo\Seo\Enums\HookTarget enum.
+     * \LaravelSEO\Seo\Enums\HookTarget enum.
      *
      * @var int
      */
@@ -60,9 +60,9 @@ class Hook
      */
 
     /**
-     * Get the specified hook target defined in \laravel-seo\Seo\Enums\HookTarget.
+     * Get the specified hook target defined in \LaravelSEO\Seo\Enums\HookTarget.
      *
-     * @return int \laravel-seo\Seo\Enums\HookTarget enum value
+     * @return int \LaravelSEO\Seo\Enums\HookTarget enum value
      */
     public function getTarget(): int
     {
@@ -179,7 +179,7 @@ class Hook
      *
      * @param bool $status State
      *
-     * @return \laravel-seo\Seo\Helpers\Hook
+     * @return \LaravelSEO\Seo\Helpers\Hook
      */
     public function setExecuted(bool $status): self
     {

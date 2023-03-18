@@ -19,8 +19,8 @@ seo()->title(string $title = null, bool $escape = true);
 <summary>same as ...</summary>
 
 ```php
-use laravel-seo\Seo\Structs\Title;
-use laravel-seo\Seo\Structs\Meta;
+use LaravelSEO\Seo\Structs\Title;
+use LaravelSEO\Seo\Structs\Meta;
 
 seo()->addMany([
 
@@ -61,7 +61,7 @@ seo()->description(string $description = null, bool $escape = true);
 <summary>same as ...</summary>
 
 ```php
-use laravel-seo\Seo\Structs\Meta;
+use LaravelSEO\Seo\Structs\Meta;
 
 seo()->addMany([
 
@@ -103,7 +103,7 @@ seo()->image(string $image = null, bool $escape = true);
 <summary>same as ...</summary>
 
 ```php
-use laravel-seo\Seo\Structs\Meta;
+use LaravelSEO\Seo\Structs\Meta;
 
 seo()->addMany([
 
@@ -147,7 +147,7 @@ seo()->meta(string $name, $content = null, bool $escape = true);
 <summary>same as ...</summary>
 
 ```php
-use laravel-seo\Seo\Structs\Meta;
+use LaravelSEO\Seo\Structs\Meta;
 
 seo()->add(
     Meta::make()
@@ -177,7 +177,7 @@ seo()->og(string $property, $content = null, bool $escape = true);
 <summary>same as ...</summary>
 
 ```php
-use laravel-seo\Seo\Structs\Meta\OpenGraph;
+use LaravelSEO\Seo\Structs\Meta\OpenGraph;
 
 seo()->add(
     OpenGraph::make()
@@ -207,7 +207,7 @@ seo()->twitter(string $name, $content = null, bool $escape = true);
 <summary>same as ...</summary>
 
 ```php
-use laravel-seo\Seo\Structs\Meta\Twitter;
+use LaravelSEO\Seo\Structs\Meta\Twitter;
 
 seo()->add(
     Twitter::make()
@@ -237,7 +237,7 @@ seo()->canonical(string $canonical);
 <summary>same as ...</summary>
 
 ```php
-use laravel-seo\Seo\Structs\Link\Canonical;
+use LaravelSEO\Seo\Structs\Link\Canonical;
 
 seo()->add(
     Canonical::make()
@@ -266,7 +266,7 @@ seo()->csrfToken(string $token = null);
 <summary>same as ...</summary>
 
 ```php
-use laravel-seo\Seo\Structs\Meta\CsrfToken;
+use LaravelSEO\Seo\Structs\Meta\CsrfToken;
 
 seo()->add(
     CsrfToken::make()
@@ -294,7 +294,7 @@ If you need to use more advanced elements which are not covered with shorthand s
 ### Titles
 
 ```php
-use laravel-seo\Seo\Structs\Title;
+use LaravelSEO\Seo\Structs\Title;
 
 seo()->add(
     Title::make()->body('This is a Title')
@@ -310,7 +310,7 @@ seo()->add(
 Using the `attr(string $attribute, $value = null)` method, we can append attributes with given values.
 
 ```php
-use laravel-seo\Seo\Structs\Meta;
+use LaravelSEO\Seo\Structs\Meta;
 
 seo()->add(
     Meta::make()
@@ -332,7 +332,7 @@ All **OpenGraph** elements are defined by `property=""` and `content=""` attribu
 Instead of using the `attr()` Struct method, we can use the shorthand `property()` and `content()` methods by the `OpenGraph` class.
 
 ```php
-use laravel-seo\Seo\Structs\Meta\OpenGraph;
+use LaravelSEO\Seo\Structs\Meta\OpenGraph;
 
 seo()->add(
     OpenGraph::make()
@@ -342,7 +342,7 @@ seo()->add(
 ```
 
 ```php
-use laravel-seo\Seo\Structs\Meta\OpenGraph;
+use LaravelSEO\Seo\Structs\Meta\OpenGraph;
 
 seo()->add(
     OpenGraph::make()
@@ -362,7 +362,7 @@ seo()->add(
 **Twitter** meta tags share the same behavior as **OpenGraph** tags while the property prefix is `twitter:`.
 
 ```php
-use laravel-seo\Seo\Structs\Meta\Twitter;
+use LaravelSEO\Seo\Structs\Meta\Twitter;
 
 seo()->add(
     Twitter::make()
@@ -372,7 +372,7 @@ seo()->add(
 ```
 
 ```php
-use laravel-seo\Seo\Structs\Meta\Twitter;
+use LaravelSEO\Seo\Structs\Meta\Twitter;
 
 seo()->add(
     Twitter::make()
@@ -392,88 +392,88 @@ seo()->add(
 ### Base
 
 ```php
-laravel-seo\Seo\Structs\Base::make();
+LaravelSEO\Seo\Structs\Base::make();
 ```
 
 ### Link
 
 ```php
-laravel-seo\Seo\Structs\Link::make();
+LaravelSEO\Seo\Structs\Link::make();
 ```
 
 ```php
-laravel-seo\Seo\Structs\Link\Canonical::make();
+LaravelSEO\Seo\Structs\Link\Canonical::make();
 ```
 
 ### Meta
 
 ```php
-laravel-seo\Seo\Structs\Meta::make();
+LaravelSEO\Seo\Structs\Meta::make();
 ```
 
 ```php
-laravel-seo\Seo\Structs\Meta\Article::make()
+LaravelSEO\Seo\Structs\Meta\Article::make()
     ->property(string $value, bool $escape = true)
     ->content(string $value, bool $escape = true);
 ```
 
 ```php
-laravel-seo\Seo\Structs\Meta\AppLink::make()
+LaravelSEO\Seo\Structs\Meta\AppLink::make()
     ->property(string $value, bool $escape = true)
     ->content(string $value, bool $escape = true);
 ```
 
 ```php
-laravel-seo\Seo\Structs\Meta\Charset::make()
+LaravelSEO\Seo\Structs\Meta\Charset::make()
     ->charset(string $charset, bool $escape = true);
 ```
 
 ```php
-laravel-seo\Seo\Structs\Meta\CsrfToken::make()
+LaravelSEO\Seo\Structs\Meta\CsrfToken::make()
     ->token($token = null, bool $escape = true);
 ```
 
 ```php
-laravel-seo\Seo\Structs\Meta\Description::make();
+LaravelSEO\Seo\Structs\Meta\Description::make();
 ```
 
 ```php
-laravel-seo\Seo\Structs\Meta\OpenGraph::make()
+LaravelSEO\Seo\Structs\Meta\OpenGraph::make()
     ->property(string $value, bool $escape = true)
     ->content(string $value = null, bool $escape = true);
 ```
 
 ```php
-laravel-seo\Seo\Structs\Meta\Robots::make();
+LaravelSEO\Seo\Structs\Meta\Robots::make();
 ```
 
 ```php
-laravel-seo\Seo\Structs\Meta\Twitter::make()
+LaravelSEO\Seo\Structs\Meta\Twitter::make()
     ->name(string $value, bool $escape = true)
     ->content(string $value, bool $escape = true);
 ```
 
 ```php
-laravel-seo\Seo\Structs\Meta\Viewport::make()
+LaravelSEO\Seo\Structs\Meta\Viewport::make()
     ->content(string $content, bool $escape = true);
 ```
 
 ### Noscript
 
 ```php
-laravel-seo\Seo\Structs\Noscript::make();
+LaravelSEO\Seo\Structs\Noscript::make();
 ```
 
 ### Script
 
 ```php
-laravel-seo\Seo\Structs\Script::make();
+LaravelSEO\Seo\Structs\Script::make();
 ```
 
 ### Title
 
 ```php
-laravel-seo\Seo\Structs\Title::make();
+LaravelSEO\Seo\Structs\Title::make();
 ```
 
 ## Escaping
@@ -483,23 +483,23 @@ By default, all body and attribute content is escaped via the Laravel [`e()`](ht
 **Use this feature with caution!**
 
 ```php
-use laravel-seo\Seo\Structs\Title;
+use LaravelSEO\Seo\Structs\Title;
 
 Title::make()->body('Dont \' escape me!', false);
 ```
 
 ```php
-use laravel-seo\Seo\Structs\Meta;
+use LaravelSEO\Seo\Structs\Meta;
 
 Meta::make()->attr('content', 'Dont \' escape me!', false);
 ```
 
 ## Creating custom Structs
 
-You can create your own Structs simply by extending the `laravel-seo\Seo\Structs\Struct` class.
+You can create your own Structs simply by extending the `LaravelSEO\Seo\Structs\Struct` class.
 
 ```php
-use laravel-seo\Seo\Structs\Struct;
+use LaravelSEO\Seo\Structs\Struct;
 
 class MyStruct extends Struct
 {
@@ -534,7 +534,7 @@ protected $unique = true;
 Now, previously created Structs will be overwritten.
 
 ```php
-use laravel-seo\Seo\Structs\Struct;
+use LaravelSEO\Seo\Structs\Struct;
 
 class MyStruct extends Struct
 {
@@ -568,7 +568,7 @@ seo()->add(MyStruct::make()->attr('name', 'my-description')->attr('content', 'Th
 You are also able to modify the unique attributes by setting the `uniqueAttributes` property. If empty, just the tag name will be considered as unique.
 
 ```php
-use laravel-seo\Seo\Structs\Struct;
+use LaravelSEO\Seo\Structs\Struct;
 
 class MyStruct extends Struct
 {
@@ -610,7 +610,7 @@ seo()->add(MyStruct::make()->attr('name', 'my-title')->attr('content', 'This is 
 After a Struct instance has been created, we call the static `defaults` method.
 
 ```php
-use laravel-seo\Seo\Structs\Struct;
+use LaravelSEO\Seo\Structs\Struct;
 
 class MyStruct extends Struct
 {
@@ -628,11 +628,11 @@ class MyStruct extends Struct
 
 By implementing the `defaults` method on your custom Struct, you can run any custom logic like adding default attributes.
 
-This is used among others in the `laravel-seo\Seo\Structs\Meta\Charset` Struct to set a default charset attribute.
+This is used among others in the `LaravelSEO\Seo\Structs\Meta\Charset` Struct to set a default charset attribute.
 
 ```php
-use laravel-seo\Seo\Structs\Meta;
-use laravel-seo\Seo\Structs\Struct;
+use LaravelSEO\Seo\Structs\Meta;
+use LaravelSEO\Seo\Structs\Struct;
 
 class Charset extends Meta
 {

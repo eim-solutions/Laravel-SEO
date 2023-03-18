@@ -1,19 +1,19 @@
 <?php
 
-namespace laravel-seo\Seo\Collections;
+namespace LaravelSEO\Seo\Collections;
 
-use laravel-seo\Seo\Collections\Contracts\CollectionContract;
-use laravel-seo\Seo\Schema\Schema as SchemaContainer;
+use LaravelSEO\Seo\Collections\Contracts\CollectionContract;
+use LaravelSEO\Seo\Schema\Schema as SchemaContainer;
 
 class SchemaCollection implements CollectionContract
 {
     /**
-     * @var \laravel-seo\Seo\Schema\Schema[]
+     * @var \LaravelSEO\Seo\Schema\Schema[]
      */
     protected $schemas = [];
 
     /**
-     * @return \laravel-seo\Seo\Schema\Schema[]
+     * @return \LaravelSEO\Seo\Schema\Schema[]
      */
     public function all(): array
     {
@@ -26,7 +26,7 @@ class SchemaCollection implements CollectionContract
     }
 
     /**
-     * @param \laravel-seo\Seo\Schema\Schema[] $schemas
+     * @param \LaravelSEO\Seo\Schema\Schema[] $schemas
      */
     public function set(array $schemas): void
     {

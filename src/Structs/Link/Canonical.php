@@ -1,9 +1,9 @@
 <?php
 
-namespace laravel-seo\Seo\Structs\Link;
+namespace LaravelSEO\Seo\Structs\Link;
 
-use laravel-seo\Seo\Structs\Link;
-use laravel-seo\Seo\Structs\Struct;
+use LaravelSEO\Seo\Structs\Link;
+use LaravelSEO\Seo\Structs\Struct;
 
 class Canonical extends Link
 {

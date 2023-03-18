@@ -1,16 +1,16 @@
 <?php
 
-namespace laravel-seo\Seo\Conductors;
+namespace LaravelSEO\Seo\Conductors;
 
-use laravel-seo\Seo\Conductors\Types\ManifestAsset;
-use laravel-seo\Seo\Exceptions\ManifestNotFoundException;
-use laravel-seo\Seo\Services\SeoService;
-use laravel-seo\Seo\Structs\Link;
+use LaravelSEO\Seo\Conductors\Types\ManifestAsset;
+use LaravelSEO\Seo\Exceptions\ManifestNotFoundException;
+use LaravelSEO\Seo\Services\SeoService;
+use LaravelSEO\Seo\Structs\Link;
 
 class MixManifestConductor
 {
     /**
-     * @var \laravel-seo\Seo\Services\SeoService
+     * @var \LaravelSEO\Seo\Services\SeoService
      */
     private $seo;
 
@@ -20,7 +20,7 @@ class MixManifestConductor
     private $path;
 
     /**
-     * @var \laravel-seo\Seo\Conductors\Types\ManifestAsset[]
+     * @var \LaravelSEO\Seo\Conductors\Types\ManifestAsset[]
      */
     private $assets = [];
 
@@ -52,7 +52,7 @@ class MixManifestConductor
     }
 
     /**
-     * @return \laravel-seo\Seo\Conductors\Types\ManifestAsset[]
+     * @return \LaravelSEO\Seo\Conductors\Types\ManifestAsset[]
      */
     public function getAssets(): array
     {
@@ -64,7 +64,7 @@ class MixManifestConductor
      *
      * @param \Closure $callback
      *
-     * @return \laravel-seo\Seo\Conductors\MixManifestConductor
+     * @return \LaravelSEO\Seo\Conductors\MixManifestConductor
      */
     public function map(\Closure $callback): self
     {
@@ -100,9 +100,9 @@ class MixManifestConductor
     /**
      * @param string|null $path
      *
-     * @throws \laravel-seo\Seo\Exceptions\ManifestNotFoundException
+     * @throws \LaravelSEO\Seo\Exceptions\ManifestNotFoundException
      *
-     * @return \laravel-seo\Seo\Conductors\MixManifestConductor
+     * @return \LaravelSEO\Seo\Conductors\MixManifestConductor
      */
     public function load(string $path = null): self
     {
@@ -126,7 +126,7 @@ class MixManifestConductor
     }
 
     /**
-     * @param \laravel-seo\Seo\Conductors\Types\ManifestAsset $asset
+     * @param \LaravelSEO\Seo\Conductors\Types\ManifestAsset $asset
      *
      * @return void
      */
@@ -148,9 +148,9 @@ class MixManifestConductor
     }
 
     /**
-     * @throws \laravel-seo\Seo\Exceptions\ManifestNotFoundException
+     * @throws \LaravelSEO\Seo\Exceptions\ManifestNotFoundException
      *
-     * @return \laravel-seo\Seo\Conductors\Types\ManifestAsset[]
+     * @return \LaravelSEO\Seo\Conductors\Types\ManifestAsset[]
      */
     private function readContents(): array
     {

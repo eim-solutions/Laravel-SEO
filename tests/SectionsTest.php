@@ -1,9 +1,9 @@
 <?php
 
-namespace laravel-seo\Seo\Test;
+namespace LaravelSEO\Seo\Test;
 
-use laravel-seo\Seo\Services\SeoService;
-use laravel-seo\Seo\Structs\Meta;
+use LaravelSEO\Seo\Services\SeoService;
+use LaravelSEO\Seo\Structs\Meta;
 use Spatie\SchemaOrg\NightClub;
 use Spatie\SchemaOrg\PetStore;
 

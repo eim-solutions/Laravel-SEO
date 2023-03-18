@@ -1,9 +1,9 @@
 <?php
 
-namespace laravel-seo\Seo\Structs\Meta;
+namespace LaravelSEO\Seo\Structs\Meta;
 
-use laravel-seo\Seo\Structs\Meta;
-use laravel-seo\Seo\Structs\Struct;
+use LaravelSEO\Seo\Structs\Meta;
+use LaravelSEO\Seo\Structs\Struct;
 
 class Robots extends Meta
 {

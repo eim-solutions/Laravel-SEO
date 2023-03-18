@@ -1,9 +1,9 @@
 <?php
 
-namespace laravel-seo\Seo\Collections;
+namespace LaravelSEO\Seo\Collections;
 
-use laravel-seo\Seo\Collections\Contracts\CollectionContract;
-use laravel-seo\Seo\Structs\Struct;
+use LaravelSEO\Seo\Collections\Contracts\CollectionContract;
+use LaravelSEO\Seo\Structs\Struct;
 
 /**
  * The Seo class functions as an intermediate layer between the laravel dependency container
@@ -14,12 +14,12 @@ use laravel-seo\Seo\Structs\Struct;
 class StructCollection implements CollectionContract
 {
     /**
-     * @var \laravel-seo\Seo\Structs\Struct[]
+     * @var \LaravelSEO\Seo\Structs\Struct[]
      */
     protected $structs = [];
 
     /**
-     * @return \laravel-seo\Seo\Structs\Struct[]
+     * @return \LaravelSEO\Seo\Structs\Struct[]
      */
     public function all(): array
     {
@@ -32,7 +32,7 @@ class StructCollection implements CollectionContract
     }
 
     /**
-     * @param \laravel-seo\Seo\Structs\Struct[] $structs
+     * @param \LaravelSEO\Seo\Structs\Struct[] $structs
      */
     public function set(array $structs): void
     {

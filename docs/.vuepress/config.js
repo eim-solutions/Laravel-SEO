@@ -1,5 +1,5 @@
 module.exports = {
-    base: '/Laravel-SEO/',
+    base: '/LaravelSEO/',
     title: 'Laravel SEO',
     description: 'SEO package made for maximum customization and flexibility ',
     host: 'localhost',
@@ -7,8 +7,8 @@ module.exports = {
     themeConfig: {
         nav: [
             { text: 'Home', link: '/' },
-            { text: 'GitHub', link: 'https://github.com/laravel-seo/Laravel-SEO' },
-            { text: 'Packagist', link: 'https://packagist.org/packages/laravel-seo/laravel-seo' },
+            { text: 'GitHub', link: 'https://github.com/LaravelSEO/LaravelSEO' },
+            { text: 'Packagist', link: 'https://packagist.org/packages/LaravelSEO/LaravelSEO' },
         ],
         sidebar: [
             '/',

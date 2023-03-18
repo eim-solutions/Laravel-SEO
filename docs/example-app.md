@@ -12,11 +12,11 @@ $ php artisan make:provider SeoServiceProvider
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use laravel-seo\Seo\Builders\StructBuilder;
-use laravel-seo\Seo\Facades\Seo;
-use laravel-seo\Seo\Helpers\Hook;
-use laravel-seo\Seo\Structs\Meta;
-use laravel-seo\Seo\Structs\Title;
+use LaravelSEO\Seo\Builders\StructBuilder;
+use LaravelSEO\Seo\Facades\Seo;
+use LaravelSEO\Seo\Helpers\Hook;
+use LaravelSEO\Seo\Structs\Meta;
+use LaravelSEO\Seo\Structs\Title;
 
 class SeoServiceProvider extends ServiceProvider
 {
@@ -27,7 +27,7 @@ class SeoServiceProvider extends ServiceProvider
         // Add a getTitle method for obtaining the unmodified title
 
         Seo::macro('getTitle', function () {
-            /** @var \laravel-seo\Seo\Services\SeoService $this */
+            /** @var \LaravelSEO\Seo\Services\SeoService $this */
 
             if ( ! $title = $this->getStruct(Title::class)) {
                 return null;
@@ -43,7 +43,7 @@ class SeoServiceProvider extends ServiceProvider
         // Create a custom macro
 
         Seo::macro('customTag', function (string $value) {
-            /** @var \laravel-seo\Seo\Services\SeoService $this */
+            /** @var \LaravelSEO\Seo\Services\SeoService $this */
 
             return $this->add(
                 Meta::make()->name('custom')->content($value)
@@ -75,11 +75,11 @@ $ php artisan make:middleware AddSeoDefaults
 namespace App\Http\Middleware;
 
 use Closure;
-use laravel-seo\Seo\Structs\Link;
-use laravel-seo\Seo\Structs\Meta;
-use laravel-seo\Seo\Structs\Meta\OpenGraph;
-use laravel-seo\Seo\Structs\Meta\Twitter;
-use laravel-seo\Seo\Structs\Script;
+use LaravelSEO\Seo\Structs\Link;
+use LaravelSEO\Seo\Structs\Meta;
+use LaravelSEO\Seo\Structs\Meta\OpenGraph;
+use LaravelSEO\Seo\Structs\Meta\Twitter;
+use LaravelSEO\Seo\Structs\Script;
 
 class AddSeoDefaults
 {
@@ -107,8 +107,8 @@ class AddSeoDefaults
             OpenGraph::make()->property('locale')->content('de_DE'),
 
             Twitter::make()->name('card')->content('summary_large_image'),
-            Twitter::make()->name('site')->content('@laravel-seo'),
-            Twitter::make()->name('creator')->content('@laravel-seo'),
+            Twitter::make()->name('site')->content('@LaravelSEO'),
+            Twitter::make()->name('creator')->content('@LaravelSEO'),
             Twitter::make()->name('image')->content('/assets/images/Banner.jpg', false)
 
         ]);

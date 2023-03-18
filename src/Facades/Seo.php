@@ -1,9 +1,9 @@
 <?php
 
-namespace laravel-seo\Seo\Facades;
+namespace LaravelSEO\Seo\Facades;
 
 use Illuminate\Support\Facades\Facade;
-use laravel-seo\Seo\Services\SeoService;
+use LaravelSEO\Seo\Services\SeoService;
 
 /**
  * @method static void macro($name, $macro)

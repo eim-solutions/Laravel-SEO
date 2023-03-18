@@ -1,13 +1,13 @@
 <?php
 
-namespace laravel-seo\Seo\Test;
+namespace LaravelSEO\Seo\Test;
 
-use laravel-seo\Seo\Structs\Meta\Charset;
-use laravel-seo\Seo\Structs\Meta\Robots;
-use laravel-seo\Seo\Structs\Meta\Viewport;
-use laravel-seo\Seo\Structs\Title;
-use laravel-seo\Seo\Test\Structs\UniqueMultiAttributeStruct;
-use laravel-seo\Seo\Test\Structs\UniqueSingleAttributeStruct;
+use LaravelSEO\Seo\Structs\Meta\Charset;
+use LaravelSEO\Seo\Structs\Meta\Robots;
+use LaravelSEO\Seo\Structs\Meta\Viewport;
+use LaravelSEO\Seo\Structs\Title;
+use LaravelSEO\Seo\Test\Structs\UniqueMultiAttributeStruct;
+use LaravelSEO\Seo\Test\Structs\UniqueSingleAttributeStruct;
 
 class CollisionTest extends TestCase
 {

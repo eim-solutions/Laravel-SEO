@@ -1,18 +1,18 @@
 <?php
 
-namespace laravel-seo\Seo\Conductors;
+namespace LaravelSEO\Seo\Conductors;
 
-use laravel-seo\Seo\Conductors\ArrayStructures\AbstractArraySchema;
-use laravel-seo\Seo\Conductors\ArrayStructures\AttributeArraySchema;
-use laravel-seo\Seo\Conductors\ArrayStructures\NestedArraySchema;
-use laravel-seo\Seo\Conductors\ArrayStructures\SingleArraySchema;
-use laravel-seo\Seo\Services\SeoService;
-use laravel-seo\Seo\Structs;
+use LaravelSEO\Seo\Conductors\ArrayStructures\AbstractArraySchema;
+use LaravelSEO\Seo\Conductors\ArrayStructures\AttributeArraySchema;
+use LaravelSEO\Seo\Conductors\ArrayStructures\NestedArraySchema;
+use LaravelSEO\Seo\Conductors\ArrayStructures\SingleArraySchema;
+use LaravelSEO\Seo\Services\SeoService;
+use LaravelSEO\Seo\Structs;
 
 class ArrayFormatConductor
 {
     /**
-     * @var \laravel-seo\Seo\Services\SeoService
+     * @var \LaravelSEO\Seo\Services\SeoService
      */
     private $seo;
 
@@ -24,7 +24,7 @@ class ArrayFormatConductor
     /**
      * Get the predefined schemas for array formatting.
      *
-     * @return array<string, \laravel-seo\Seo\Conductors\ArrayStructures\AbstractArraySchema>
+     * @return array<string, \LaravelSEO\Seo\Conductors\ArrayStructures\AbstractArraySchema>
      */
     private function getSchemas(): array
     {
@@ -67,7 +67,7 @@ class ArrayFormatConductor
              *     $data = [
              *         'twitter' => [
              *             'card' => 'summary',
-             *             'creator' => '@laravel-seo'
+             *             'creator' => '@LaravelSEO'
              *         ]
              *     ];
              */
@@ -116,7 +116,7 @@ class ArrayFormatConductor
      *
      * @param string $index
      *
-     * @return \laravel-seo\Seo\Conductors\ArrayStructures\AbstractArraySchema|null
+     * @return \LaravelSEO\Seo\Conductors\ArrayStructures\AbstractArraySchema|null
      */
     private function getSchema(string $index): ?AbstractArraySchema
     {

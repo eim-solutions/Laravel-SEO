@@ -1,12 +1,12 @@
 <?php
 
-namespace laravel-seo\Seo\Providers;
+namespace LaravelSEO\Seo\Providers;
 
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\ServiceProvider;
-use laravel-seo\Seo\Collections\SchemaCollection;
-use laravel-seo\Seo\Collections\StructCollection;
-use laravel-seo\Seo\Services\SeoService;
+use LaravelSEO\Seo\Collections\SchemaCollection;
+use LaravelSEO\Seo\Collections\StructCollection;
+use LaravelSEO\Seo\Services\SeoService;
 
 class SeoServiceProvider extends ServiceProvider
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace laravel-seo\Seo\Schema;
+namespace LaravelSEO\Seo\Schema;
 
-use laravel-seo\Seo\Structs\Struct;
+use LaravelSEO\Seo\Structs\Struct;
 use Spatie\SchemaOrg\Type;
 
 final class Schema

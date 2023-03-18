@@ -41,7 +41,7 @@ By default, all assets are added to the document head. You can specify filters o
 In this example, we will stop all **admin** frontend assets from prefetching by returning `null` within the provided map callback.
 
 ```php
-use laravel-seo\Seo\Conductors\Types\ManifestAsset;
+use LaravelSEO\Seo\Conductors\Types\ManifestAsset;
 
 seo()
     ->mix()
@@ -79,7 +79,7 @@ seo()
 You can force your preloaded/prefetched assets to use an alternate URL by modifying the `url` attribute.
 
 ```php
-use laravel-seo\Seo\Conductors\Types\ManifestAsset;
+use LaravelSEO\Seo\Conductors\Types\ManifestAsset;
 
 seo()
     ->mix()
@@ -115,7 +115,7 @@ By default, all assets found in your mix file are inserted with the `prefetch` m
 You are also free to change the default `prefetch` value to `preload` using the map callback. The following code example will `preload` all assets containing "component" or otherwise fall back on `prefetch`.
 
 ```php
-use laravel-seo\Seo\Conductors\Types\ManifestAsset;
+use LaravelSEO\Seo\Conductors\Types\ManifestAsset;
 
 seo()
     ->mix()
@@ -158,7 +158,7 @@ Preloading content required a minimum of `href` and `as` attribute. This package
 Feels free to change the resource type.
 
 ```php
-use laravel-seo\Seo\Conductors\Types\ManifestAsset;
+use LaravelSEO\Seo\Conductors\Types\ManifestAsset;
 
 seo()
     ->mix()

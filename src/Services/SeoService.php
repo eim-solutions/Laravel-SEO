@@ -1,18 +1,18 @@
 <?php
 
-namespace laravel-seo\Seo\Services;
+namespace LaravelSEO\Seo\Services;
 
 use Illuminate\Support\Traits\Macroable;
-use laravel-seo\Seo\Collections\SchemaCollection;
-use laravel-seo\Seo\Collections\StructCollection;
-use laravel-seo\Seo\Conductors\ArrayFormatConductor;
-use laravel-seo\Seo\Conductors\MixManifestConductor;
-use laravel-seo\Seo\Conductors\RenderConductor;
-use laravel-seo\Seo\Helpers\Hook;
-use laravel-seo\Seo\Services\Traits\CollisionTrait;
-use laravel-seo\Seo\Services\Traits\SchemaOrgTrait;
-use laravel-seo\Seo\Services\Traits\ShorthandSetterTrait;
-use laravel-seo\Seo\Structs\Struct;
+use LaravelSEO\Seo\Collections\SchemaCollection;
+use LaravelSEO\Seo\Collections\StructCollection;
+use LaravelSEO\Seo\Conductors\ArrayFormatConductor;
+use LaravelSEO\Seo\Conductors\MixManifestConductor;
+use LaravelSEO\Seo\Conductors\RenderConductor;
+use LaravelSEO\Seo\Helpers\Hook;
+use LaravelSEO\Seo\Services\Traits\CollisionTrait;
+use LaravelSEO\Seo\Services\Traits\SchemaOrgTrait;
+use LaravelSEO\Seo\Services\Traits\ShorthandSetterTrait;
+use LaravelSEO\Seo\Structs\Struct;
 
 class SeoService
 {
@@ -39,20 +39,20 @@ class SeoService
     /**
      * Applied schema.org schemes.
      *
-     * @var \laravel-seo\Seo\Collections\SchemaCollection
+     * @var \LaravelSEO\Seo\Collections\SchemaCollection
      */
     protected $schemaCollection;
 
     /**
-     * @var \laravel-seo\Seo\Collections\StructCollection
+     * @var \LaravelSEO\Seo\Collections\StructCollection
      */
     protected $structCollection;
 
     /**
      * Constructor.
      *
-     * @param \laravel-seo\Seo\Collections\StructCollection $structCollection
-     * @param \laravel-seo\Seo\Collections\SchemaCollection $schemaCollection
+     * @param \LaravelSEO\Seo\Collections\StructCollection $structCollection
+     * @param \LaravelSEO\Seo\Collections\SchemaCollection $schemaCollection
      */
     public function __construct(StructCollection $structCollection, SchemaCollection $schemaCollection)
     {
@@ -98,7 +98,7 @@ class SeoService
     /**
      * Get structs.
      *
-     * @return \laravel-seo\Seo\Structs\Struct[]
+     * @return \LaravelSEO\Seo\Structs\Struct[]
      */
     public function getStructs(): array
     {
@@ -112,7 +112,7 @@ class SeoService
      *
      * @param string $class
      *
-     * @return \laravel-seo\Seo\Structs\Struct|null
+     * @return \LaravelSEO\Seo\Structs\Struct|null
      */
     public function getStruct(string $class): ?Struct
     {
@@ -130,7 +130,7 @@ class SeoService
     /**
      * Set structs.
      *
-     * @param \laravel-seo\Seo\Structs\Struct[] $structCollection
+     * @param \LaravelSEO\Seo\Structs\Struct[] $structCollection
      */
     public function setStructCollection(array $structCollection): void
     {
@@ -165,7 +165,7 @@ class SeoService
      * Append a given struct. This is an internal method called by all add/set public methods
      * which also sets the current section to the struct.
      *
-     * @param \laravel-seo\Seo\Structs\Struct $struct
+     * @param \LaravelSEO\Seo\Structs\Struct $struct
      */
     public function appendStruct(Struct $struct): void
     {
@@ -210,7 +210,7 @@ class SeoService
     /**
      * Add many structs.
      *
-     * @param \laravel-seo\Seo\Structs\Struct[] $structs
+     * @param \LaravelSEO\Seo\Structs\Struct[] $structs
      *
      * @return $this
      */
@@ -242,7 +242,7 @@ class SeoService
      * alias for the Struct::hook() method.
      *
      * @param string $structClass
-     * @param \laravel-seo\Seo\Helpers\Hook $hook
+     * @param \LaravelSEO\Seo\Helpers\Hook $hook
      *
      * @return void
      */
@@ -252,7 +252,7 @@ class SeoService
     }
 
     /**
-     * @return \laravel-seo\Seo\Conductors\MixManifestConductor
+     * @return \LaravelSEO\Seo\Conductors\MixManifestConductor
      */
     public function mix(): MixManifestConductor
     {
@@ -260,7 +260,7 @@ class SeoService
     }
 
     /**
-     * @return \laravel-seo\Seo\Conductors\RenderConductor
+     * @return \LaravelSEO\Seo\Conductors\RenderConductor
      */
     public function render(): RenderConductor
     {
@@ -271,7 +271,7 @@ class SeoService
     }
 
     /**
-     * @return \laravel-seo\Seo\Conductors\ArrayFormatConductor
+     * @return \LaravelSEO\Seo\Conductors\ArrayFormatConductor
      */
     public function arrayFormat(): ArrayFormatConductor
     {

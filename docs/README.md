@@ -3,7 +3,7 @@
 ## Installation
 
 ```
-composer require laravel-seo/laravel-seo
+composer require LaravelSEO/LaravelSEO
 ```
 
 ## Configuration
@@ -11,7 +11,7 @@ composer require laravel-seo/laravel-seo
 Copy configuration to config folder:
 
 ```
-$ php artisan vendor:publish --provider="laravel-seo\Seo\Providers\SeoServiceProvider"
+$ php artisan vendor:publish --provider="LaravelSEO\Seo\Providers\SeoServiceProvider"
 ```
 
 ## Integrations
@@ -30,7 +30,7 @@ See the [Schema.org integration docs](/schema-org.html) for more information.
 
 ## Upgrading
 
-- [Upgrading from 1.0 to **2.0**](https://github.com/laravel-seo/Laravel-SEO/releases/tag/2.0.0)
+- [Upgrading from 1.0 to **2.0**](https://github.com/LaravelSEO/LaravelSEO/releases/tag/2.0.0)
 
 ## Cheat Sheet
 

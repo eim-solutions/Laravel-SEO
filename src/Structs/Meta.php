@@ -1,6 +1,6 @@
 <?php
 
-namespace laravel-seo\Seo\Structs;
+namespace LaravelSEO\Seo\Structs;
 
 /**
  * @see https://github.com/joshbuchea/HEAD#meta
